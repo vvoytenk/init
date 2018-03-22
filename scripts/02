@@ -1,0 +1,5 @@
+echo "apt-get update && apt-get upgrade" >> run.sh
+echo "0 4 * * 0 sh run.sh /var/log/update_script.log" >> cronfile
+crontab cronfile
+
+#crontab -l

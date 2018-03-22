@@ -1,0 +1,1 @@
+netstat -r -n | grep "default" | sed 'n;d' | cut -d U -f 1 | sed s/default//
